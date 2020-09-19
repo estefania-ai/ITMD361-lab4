@@ -19,62 +19,59 @@
             </style>
         <body>
             <h1>Volunteer Form</h1>
-            <div>
-                <h3>My Info</h3>
-                <form action="/action_page.php" method="get">
-                    <label for="first_name_field">First name:</label>
-                    <input type="text" id="first_name_field" name="first_name_field"><br><br>
-                    <label for="last_name_field">Last name:</label>
-                    <input type="text" id="last_name_field" name="last_name_field"><br><br>
-                    <label for="phone_field">Phone Number:</label>
-                    <input type="text" id="phone_field" name="phone_field"><br><br>
-                    <label for="email_field">Email Address:</label>
-                    <input type="text" id="email_field" name="email_field"><br><br>
-                    <h4>Gender:</h4>
-                    <input type="radio" id="male" name="gender_field" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender_field" value="female">
-                    <label for="female">Female</label><br><br>
-                    <label for="age_field">Age:</label>
-                    <select id="age_field" name="age_field">
-                        <option value="under 18">under 18</option>
-                        <option value="18-24">18-24</option>
-                        <option value="25-34">25-34</option>
-                        <option value="35-44">35-44</option>
-                        <option value="45-54">45-54</option>
-                        <option value="55-64">55-64</option>
-                        <option value="65 and over">65 and over</option> 
-                    </select><br><br>
-                  </form>
-            </div>
-            <br><br>
-            <h4>My Availability</h4>
-            <div>
-                <p>Days Available:</p>
-                <form action="/action_page.php">
-                    <input type="checkbox" id="Day1" name="Day1" value="Sunday">
-                    <label for="Day1">Sunday</label><br>
-                    <input type="checkbox" id="Day2" name="Day2" value="Monday">
-                    <label for="Day2">Monday</label><br>
-                    <input type="checkbox" id="Day3" name="Day3" value="Tuesday">
-                    <label for="Day3">Tuesday</label><br>
-                    <input type="checkbox" id="Day4" name="Day4" value="Wednesday">
-                    <label for="Day4">Wednesday</label><br>
-                    <input type="checkbox" id="Day5" name="Day5" value="Thursday">
-                    <label for="Day4">Thursday</label><br>
-                    <input type="checkbox" id="Day6" name="Day6" value="Friday">
-                    <label for="Day6">Friday</label><br>
-                    <input type="checkbox" id="Day7" name="Day7" value="Saturday">
-                    <label for="Day7">Saturday</label><br><br>
-                    <p>Any Comments?</p>
-                    <textarea name="message" rows="10" cols="30"></textarea>
+                <form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="POST">
+                    <div>
+                        <h3>My Info</h3>
+                        <label for="first_name_field">First name:</label>
+                        <input type="text" id="first_name_field" name="first_name_field"><br><br>
+                        <label for="last_name_field">Last name:</label>
+                        <input type="text" id="last_name_field" name="last_name_field"><br><br>
+                        <label for="phone_field">Phone Number:</label>
+                        <input type="text" id="phone_field" name="phone_field"><br><br>
+                        <label for="email_field">Email Address:</label>
+                        <input type="text" id="email_field" name="email_field"><br><br>
+                        <h4>Gender:</h4>
+                        <input type="radio" id="male" name="gender_field" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender_field" value="female">
+                        <label for="female">Female</label><br><br>
+                        <label for="age_field">Age:</label>
+                        <select id="age_field" name="age_field">
+                            <option value="under 18">under 18</option>
+                            <option value="18-24">18-24</option>
+                            <option value="25-34">25-34</option>
+                            <option value="35-44">35-44</option>
+                            <option value="45-54">45-54</option>
+                            <option value="55-64">55-64</option>
+                            <option value="65 and over">65 and over</option> 
+                        </select><br><br>
+                    </div>
+                    <br><br>
+                    <h4>My Availability</h4>
+                    <div>
+                        <p>Days Available:</p> <br>
+                        <input type="checkbox" id="Day1" name="available_field" value="Sunday">
+                        <label for="Day1">Sunday</label><br>
+                        <input type="checkbox" id="Day2" name="available_field" value="Monday">
+                        <label for="Day2">Monday</label><br>
+                        <input type="checkbox" id="Day3" name="available_field" value="Tuesday">
+                        <label for="Day3">Tuesday</label><br>
+                        <input type="checkbox" id="Day4" name="available_field" value="Wednesday">
+                        <label for="Day4">Wednesday</label><br>
+                        <input type="checkbox" id="Day5" name="available_field" value="Thursday">
+                        <label for="Day4">Thursday</label><br>
+                        <input type="checkbox" id="Day6" name="available_field" value="Friday">
+                        <label for="Day6">Friday</label><br>
+                        <input type="checkbox" id="Day7" name="available_field" value="Saturday">
+                        <label for="Day7">Saturday</label><br><br>
+                        <p>Any Comments?</p>
+                        <textarea name="message" rows="10" cols="30"></textarea>
+                        <br><br>
+                        <input type="hidden" id="hidden_field" name="hidden_field" value="Estefania Lopez">
+                        <input type="submit" value="Send Me">   
+                    </div>
                     <br><br>
                 </form>
-            </div>
-            <br><br>
-            <form>
-                <input type="submit" value="Send Me">
-            </form>
         </body>
     </head>
 </html>
